@@ -17,4 +17,7 @@
 -->
 <resources>
     <dimen name="rounded_corner_content_padding">47.0px</dimen>
+
+    <!-- Doze: check proximity sensor before pulsing? -->
+    <bool name="doze_proximity_check_before_pulse">false</bool>
 </resources>
