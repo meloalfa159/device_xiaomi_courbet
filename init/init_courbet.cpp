@@ -85,18 +85,32 @@ void vendor_load_properties() {
     region = GetProperty("ro.boot.hwc", "GLOBAL");
     sku = GetProperty("ro.boot.product.hardware.sku","courbetin");
 
+    std::string model;
+    std::string device;
+    std::string fingerprint;
+    std::string description;
+    std::string mod_device;
+
     if (region == "GLOBAL") {
-        set_ro_product_prop("model", "M2101K9AG");
-        set_ro_product_prop("device", "courbet");
-        set_ro_build_prop("fingerprint", "Xiaomi/courbet/courbet:13/TKQ1.221013.002/V14.0.3.0.TKQMIXM:user/release-keys");
-        property_override("ro.build.description", "courbet-user 13 TKQ1.221013.002 V14.0.3.0.TKQMIXM release-keys");
-        property_override("ro.product.mod_device", "courbet_global");
+        model = "M2101K9AG";
+        device =  "courbet";
+        fingerprint = "Xiaomi/courbet/courbet:13/TKQ1.221013.002/V14.0.3.0.TKQMIXM:user/release-keys";
+        description = "courbet-user 13 TKQ1.221013.002 V14.0.3.0.TKQMIXM release-keys";
+        mod_device = "courbet_global";
         property_override("ro.boot.product.hardware.sku", "courbet");
     } else if (region == "INDIA") {
-        set_ro_product_prop("model", "M2101K9AI");
-        set_ro_product_prop("device", "courbetin"); 
-        set_ro_product_prop("fingerprint", "Xiaomi/courbetin/courbetin:13/TKQ1.221013.002/V14.0.2.0.TKQINXM:user/release-keys");
-        property_override("ro.build.description", "courbetin-user 13 TKQ1.221013.002 V14.0.2.0.TKQINXM release-keys");
-        property_override("ro.product.mod_device", "courbet_in_global");
+        model = "M2101K9AI";
+        device =  "courbetin"; 
+        fingerprint = "Xiaomi/courbetin/courbetin:13/TKQ1.221013.002/V14.0.2.0.TKQINXM:user/release-keys";
+        description = "courbetin-user 13 TKQ1.221013.002 V14.0.2.0.TKQINXM release-keys";
+        mod_device = "courbet_in_global";
+    }
+
+    set_ro_build_prop("fingerprint", fingerprint);
+    set_ro_product_prop("device", device);
+    set_ro_product_prop("model", model);
+    property_override("ro.build.description", description.c_str());
+    if (mod_device != "") {
+        property_override("ro.product.mod_device", mod_device.c_str());
     }
 }
