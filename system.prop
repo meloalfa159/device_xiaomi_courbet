@@ -42,7 +42,6 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 ril.subscription.types=RUIM
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Recovery
