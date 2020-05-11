@@ -567,6 +567,10 @@
          for higher refresh rates to be automatically used out of the box -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
 
+    <!-- The default refresh rate. Mi 11 Lite  manages this using the peak refresh rate setting, so set
+         this value to 0 so it has no effect. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
