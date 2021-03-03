@@ -20,3 +20,7 @@ persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecomm=true
 vendor.audio.feature.fluence.enable=true
+
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM7150
