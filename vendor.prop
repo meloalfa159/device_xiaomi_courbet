@@ -9,6 +9,16 @@ vendor.voice.path.for.pcm.voip=false
 
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Display
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=200
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.vendor.display.ad=1
+vendor.display.disable_idle_time_hdr=1
+vendor.display.disable_idle_time_video=1
+vendor.display.idle_time=1100
+
 # Fluence
 ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
