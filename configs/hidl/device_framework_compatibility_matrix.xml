@@ -43,6 +43,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>android.hardware.nfc</name>
+    <version>1.2</version>
+    <interface>
+        <name>INfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.radio</name>
     <version>1.0-2</version>
     <interface>
