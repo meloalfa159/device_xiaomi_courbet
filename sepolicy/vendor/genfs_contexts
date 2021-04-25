@@ -54,3 +54,6 @@ genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/
 
 # Power
 genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
+
+# ds28e16 battery verify
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/type u:object_r:vendor_sysfs_battery_supply:s0
