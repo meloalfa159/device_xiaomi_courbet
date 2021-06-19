@@ -57,6 +57,7 @@
 
 # IR
 /dev/ir_spi                                                          u:object_r:vendor_ir_device:s0
+/dev/spidev[0-9]\.1                                                  u:object_r:lirc_device:s0
 
 # Proximity
 /dev/elliptic0                                                       u:object_r:vendor_elliptic_device:s0

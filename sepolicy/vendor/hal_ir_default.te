@@ -1,3 +1,6 @@
 type vendor_ir_device, dev_type;
 
 allow hal_ir_default vendor_ir_device:chr_file rw_file_perms;
+
+allow hal_ir_default lirc_device:chr_file rw_file_perms;
+allow hal_ir_default lirc_device:file rw_file_perms;
