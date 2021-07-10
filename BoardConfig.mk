@@ -5,3 +5,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/courbet
+
+# Inherit from proprietary files
+include vendor/xiaomi/courbet/BoardConfigVendor.mk
