@@ -9,6 +9,9 @@ include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/courbet
 
+# Audio
+TARGET_PROVIDES_AUDIO_EXTNS := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := courbet_user_defconfig
 
