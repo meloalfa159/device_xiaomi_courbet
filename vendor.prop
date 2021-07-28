@@ -23,4 +23,4 @@ vendor.audio.feature.fluence.enable=true
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM7150
+ro.soc.model=SM7150
