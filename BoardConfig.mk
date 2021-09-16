@@ -6,5 +6,8 @@
 
 DEVICE_PATH := device/xiaomi/courbet
 
+# Kernel
+TARGET_KERNEL_CONFIG := courbet_user_defconfig
+
 # Inherit from proprietary files
 include vendor/xiaomi/courbet/BoardConfigVendor.mk
