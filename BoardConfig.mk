@@ -9,5 +9,8 @@ DEVICE_PATH := device/xiaomi/courbet
 # Kernel
 TARGET_KERNEL_CONFIG := courbet_user_defconfig
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Inherit from proprietary files
 include vendor/xiaomi/courbet/BoardConfigVendor.mk
