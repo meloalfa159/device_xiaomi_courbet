@@ -324,6 +324,10 @@ vendor/firmware/ipa_fws.mdt
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# Fingerprint modules
+vendor/lib/modules/fpc1540.ko
+vendor/etc/init/init.fpc1540_ko.rc
+
 # Graphics firmware
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
