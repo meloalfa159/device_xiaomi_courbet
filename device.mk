@@ -220,6 +220,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh \
     $(LOCAL_PATH)/rootdir/bin/init.qti.early_init.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.early_init.sh
 
+# Init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.courbet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.courbet.rc
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
