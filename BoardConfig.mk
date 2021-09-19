@@ -81,6 +81,10 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/lineag
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+ODM_MANIFEST_SKUS += courbet
+ODM_MANIFEST_COURBET_FILES := \
+    $(DEVICE_PATH)/configs/hidl/manifest-qva.xml \
+    $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
