@@ -1,14 +1,14 @@
 # Audio ACDB
-vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|d991a965efda1637246286f8a2ddcd1abb15b472
+vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb|1a69f3605eb0aa8d03386d939d84bacfeb7f1d77
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|15f94417c5dfd31f91dbb51abc04e5adde7b6af3
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|a31be0c4379aeb46217f92933040d20f1bb240bb
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|6a88ba581eecf5c64d81e0f5fa3d0086f2d58aff
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|3c960cf8e0dfd71241dc07cb495100d53e127de7
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|8a1ee503e2d442807e44ea1d036949dfd2760991
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|45bfcbe0d21358c608a9ec31cdf9c1af9886fcce
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|ad3a2e9209c51444a02da07dedface83e2b10c15
+vendor/etc/acdbdata/adsp_avs_config.acdb|d1138e8fb3ebbee65bd09891352eebb8bbc3d6fe
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
