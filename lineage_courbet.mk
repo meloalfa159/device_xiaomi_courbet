@@ -21,3 +21,8 @@ PRODUCT_MODEL := Mi 11 Lite 4G
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="courbet_global-user 11 RKQ1.200826.002 V12.5.5.0.RKQMIXM release-keys"
+
+BUILD_FINGERPRINT := Xiaomi/courbet_global/courbet:11/RKQ1.200826.002/V12.5.5.0.RKQMIXM:user/release-keys
