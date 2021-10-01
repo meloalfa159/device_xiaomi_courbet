@@ -26,7 +26,7 @@ ODM_MANIFEST_COURBET_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := courbet_user_defconfig
+TARGET_KERNEL_CONFIG := courbet_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Partitions
