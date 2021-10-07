@@ -16,6 +16,9 @@
 
 BOARD_VENDOR := xiaomi
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 DEVICE_PATH := device/xiaomi/courbet
 
 # Inherit from proprietary files
