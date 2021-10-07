@@ -24,4 +24,7 @@
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
     vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
+
+    <dimen name="physical_power_button_center_screen_location_y">10670px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1067px</dimen>
 </resources>
