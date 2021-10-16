@@ -448,21 +448,26 @@ vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.mius.proximity.so
 
-# Thermal - from MIUI V12.5.3.0.RKQMIXM
-vendor/bin/mi_thermald|870d239a3914cc7d2a7eb7eec7024032450eda29
-vendor/bin/thermal-engine|e74184e124c41e51535fad6a6ad9cc089695211b
-vendor/etc/init/init.mi_thermald.rc|93377ddf881f27dabb2918adbe7215934eb8531f
-vendor/etc/thermal-arvr.conf|8d5dffb5836c92f40b2b5cf40acf784590fb0e98
-vendor/etc/thermal-camera.conf|3331afd11057e9b415e1520a72153b1d86a70bc0
-vendor/etc/thermal-chg-only.conf|7a615988eba03aecca4d45af2b6775bd910b8bed
-vendor/etc/thermal-nolimits.conf|9194d78ddfd8d906dbce994afce50f6c49b285cc
-vendor/etc/thermal-normal.conf|10d64b8951a28322e3a95c4f5eeb84e102b41041
-vendor/etc/thermal-phone.conf|b0b9f11ff9720128fdd2884de38c9f1a442c4f53
-vendor/etc/thermal-region-map.conf|0fe2d6cbcff13bd9c1d94ca69163ab8f3342ad6b
-vendor/etc/thermal-tgame.conf|0146df5e0143d5022f1550b58e0f33b2cb1be6cc
-vendor/etc/thermal-youtube.confs|357ed3b63d880be120c32289bc3dc368c49ad6ae
-vendor/etc/thermald-devices.conf|62d475be3ee174f332eb7497cb37c73df2ed8d8a
-vendor/lib64/libthermalclient.so|41274c82e1a472d12b2ebcb4156f7f77b109efa8
+# Thermal
+vendor/bin/mi_thermald
+vendor/bin/thermal-engine
+vendor/etc/init/init.mi_thermald.rc
+vendor/etc/thermal-arvr.conf
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-india-camera.conf
+vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-map-india.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-region-map.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-youtube.confs
+vendor/etc/thermald-devices.conf
+vendor/lib64/libthermalclient.so
 
 # WLAN
 vendor/bin/cnss-daemon
