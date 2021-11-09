@@ -74,6 +74,9 @@ LOC_HIDL_VERSION := 4.0
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_courbet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
+# Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
