@@ -25,6 +25,10 @@
     vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
+    <dimen name="physical_volume_up_button_center_screen_location_y">584px</dimen>
+    <dimen name="physical_volume_down_button_center_screen_location_y">762px</dimen>
+
     <dimen name="physical_power_button_center_screen_location_y">10670px</dimen>
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1067px</dimen>
 </resources>
