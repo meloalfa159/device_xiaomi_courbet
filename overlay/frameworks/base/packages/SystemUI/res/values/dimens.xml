@@ -17,10 +17,6 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
-    <dimen name="physical_volume_up_button_center_screen_location_y">584px</dimen>
-    <dimen name="physical_volume_down_button_center_screen_location_y">762px</dimen>
-
     <!-- Location of physical power button -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1100px</dimen>
     <dimen name="physical_power_button_center_screen_location_y">@dimen/physical_fingerprint_sensor_center_screen_location_y</dimen>
