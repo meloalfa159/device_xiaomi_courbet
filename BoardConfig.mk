@@ -24,6 +24,9 @@ BUILD_BROKEN_DUP_RULES := true
 
 DEVICE_PATH := device/xiaomi/courbet
 
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/sweet-miuicamera/products/board.mk
+
 # Inherit from proprietary files
 include vendor/xiaomi/courbet/BoardConfigVendor.mk
 
