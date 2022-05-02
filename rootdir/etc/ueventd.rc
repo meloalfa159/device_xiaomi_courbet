@@ -180,3 +180,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # socinfo
 /sys/devices/soc0        serial_number   0000    root      root
+
+# Fingerprint
+/dev/goodix_fp            0660   system     system
