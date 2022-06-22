@@ -25,7 +25,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/lineag
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += courbet
 ODM_MANIFEST_COURBET_FILES := \
-    $(COMMON_PATH)/configs/hidl/manifest-qva.xml \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
