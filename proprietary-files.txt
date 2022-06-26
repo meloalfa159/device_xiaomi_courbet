@@ -294,9 +294,9 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libxmi_high_dynamic_range.so
 -vendor/lib64/libxml2_vendor.so
 vendor/lib64/mibokeh_712_opencl.bin
--vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
--vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
--vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
+-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so;MODULE=vendor.qti.hardware.camera.device@1.0_vendor
+-vendor/lib64/vendor.qti.hardware.camera.device@2.0.so;MODULE=vendor.qti.hardware.camera.device@2.0_vendor
+-vendor/lib64/vendor.qti.hardware.camera.device@3.5.so;MODULE=vendor.qti.hardware.camera.device@3.5_vendor
 
 # Camera-configs
 vendor/etc/camera/CFR_para_MARCO_V01.bin
