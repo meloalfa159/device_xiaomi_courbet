@@ -10,6 +10,9 @@ vendor.bluetooth.soc=cherokee
 # Charger
 ro.charger.enable_suspend=true
 
+# Camera
+log.tag.CHIUSECASE=ERROR
+
 # CNE
 persist.vendor.cne.feature=1
 
