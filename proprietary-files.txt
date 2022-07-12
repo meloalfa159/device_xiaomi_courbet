@@ -36,6 +36,7 @@ vendor/firmware/tfa98xx.cnt
 -vendor/lib/libaudio_log_utils.so
 -vendor/lib/libaudioparsers.so
 -vendor/lib/libaudioroute_ext.so
+-vendor/lib/vndk/libxlog.so
 
 # Batterysecret
 -vendor/bin/batterysecret
