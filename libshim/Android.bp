@@ -9,7 +9,6 @@ cc_library_shared {
 
     shared_libs: [
         "libpiex",
-        "libutils",
     ],
 
     proprietary: true,
