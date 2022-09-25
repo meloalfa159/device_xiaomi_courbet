@@ -78,6 +78,14 @@ vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 
+persist.vendor.audio.hifi=false
+persist.vendor.audio.ring.filter.mask=0
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.us.type=mius
+persist.vendor.audio.voicecall.speaker.stereo=true
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
@@ -149,10 +157,31 @@ vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
 
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=500
+ro.surface_flinger.set_touch_timer_ms=750
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.vendor.display.ad=1
+vendor.display.disable_idle_time_hdr=1
+vendor.display.disable_idle_time_video=1
+vendor.display.idle_time=1100
+
 # Display - Set color mode to Adaptive by default
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
+
+# Fluence
+ro.qc.sdk.audio.fluencetype=none
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecomm=true
+vendor.audio.feature.fluence.enable=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -171,6 +200,9 @@ vendor.netflix.bsp_rev=Q6150-17263-1
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
 persist.vendor.radio.apm_sim_not_pwdn=1
