@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.sm6150
 
 PRODUCT_PACKAGES += \
+    libtinycompress \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
