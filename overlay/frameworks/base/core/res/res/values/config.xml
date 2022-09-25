@@ -648,6 +648,21 @@
     <string-array name="config_biometric_sensors" translatable="false" >
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
+ 
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+        <item>@array/config_sfps_sensor_props_1</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0" translatable="false">
+    <item></item> <!--item>displayId</item-->
+        <item></item> <!--item>sensorLocationX</item-->
+        <item>990</item> <!--item>sensorLocationY</item-->
+        <item>115</item> <!--item>sensorRadius</item-->
+    </array>
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
