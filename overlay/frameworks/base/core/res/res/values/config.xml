@@ -588,7 +588,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H 144 V 104 H 0 V 0 Z @left</string
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H 144 V 104 H 0 V 0 Z @left</string>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
@@ -654,7 +654,6 @@
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
         <item>@array/config_sfps_sensor_props_0</item>
-        <item>@array/config_sfps_sensor_props_1</item>
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">

@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.8.0.SKFMIXM, unless pinned
+# These proprietary files are extracted from MIUI 13.0.9.0.SKQMIXM, unless pinned
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -609,6 +609,15 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 -vendor/lib64/libgsl.so
 -vendor/lib64/libllvm-glnext.so
 -vendor/lib64/libllvm-qcom.so
+
+# Graphics firmware
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_sqe.fw
 
 # Gatekeeper
 -vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
