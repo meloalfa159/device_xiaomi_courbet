@@ -344,7 +344,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H 144 V 104 H 0 V 0 Z @left</string>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H 134 V 104 H 0 V 0 Z @left</string>
 
     <!-- The default intensity level for haptic feedback. See
         Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
