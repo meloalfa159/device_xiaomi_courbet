@@ -98,13 +98,12 @@ TARGET_KERNEL_CONFIG := courbet_defconfig
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 TARGET_KERNEL_CLANG_COMPILE := true
-KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_CLANG_VERSION := playground
 TARGET_CLANG_PREBUILTS_VERSION := playground
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-playground
-TARGET_CLANG_WITH_GNU_BINUTILS := true
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := arm-linux-gnueabi-
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    LLVM=1 \
+    LLVM_IAS=1
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x880000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
