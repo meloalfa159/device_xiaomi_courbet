@@ -10,6 +10,12 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                    
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/power_cfg              u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg           u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable          u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/soc/soc:fpc1020                                        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup26               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/wakeup                      u:object_r:sysfs_wakeup:s0
 
 # LED
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d000/leds/left u:object_r:vendor_sysfs_graphics:s0
