@@ -7,9 +7,6 @@ persist.vendor.btstack.absvolfeature=true
 persist.vendor.btstack.connect.peer_earbud=true
 vendor.bluetooth.soc=cherokee
 
-# Camera
-vendor.camera.aux.packagelist=com.android.camera
-
 # Charger
 ro.charger.enable_suspend=true
 
