@@ -109,6 +109,12 @@ on boot
     user system
     group system graphics
 
+    service citsensor-hal-1-1  /vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+    override
+    class late_start
+    user system
+    group system input wakelock
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100

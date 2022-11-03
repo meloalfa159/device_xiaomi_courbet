@@ -29,6 +29,3 @@ allow vendor_hal_citsensorservice_xiaomi_default input_device:chr_file rw_file_p
 
 get_prop(vendor_hal_citsensorservice_xiaomi_default, vendor_sensors_prop)
 get_prop(vendor_hal_citsensorservice_xiaomi_default, persist_sensors_prop)
-
-# Allow to use wakelock
-wakelock_use(vendor_hal_citsensorservice_xiaomi_default)
