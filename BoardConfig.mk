@@ -78,6 +78,10 @@ BOARD_HAVE_QCOM_FM := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_courbet
+TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/lineage_framework_compatibility_matrix.xml
