@@ -942,15 +942,9 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
 # RIL (system) - from LA.QSSI.13.0.r1-06400-qssi.0
--system_ext/app/DeviceInfo/DeviceInfo.apk|2bc71391bc3a96788d79d9855e3637d516b27d19
--system_ext/app/QtiTelephony/QtiTelephony.apk|d89d31ecd864652f9804cb0b8c403c630ae004b5
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|9ef9e77f209b7d699d0b37463acfb19faf46d6d4
--system_ext/app/embms/embms.apk|d31e4d6bd81832197d363954def7c54aa78aa4e0
-system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
-system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
--system_ext/framework/embmslibrary.jar|6fd7f060af0bb76dba317b58cef9b51e0a37a6cc
 -system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
+system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 -system_ext/framework/qti-telephony-common.jar|005f939b5314938ab36078bcf9aaa16369b04913
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|231862ec524e39c96b8b4575f27060caa36ce36b
 vendor/bin/hw/qcrild
