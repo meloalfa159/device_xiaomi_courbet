@@ -1,9 +1,9 @@
 # These proprietary files are extracted from courbet MIUI 13.0.9.0.SKQMIXM, unless pinned
 
-# ACDB loader - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
-vendor/lib/libacdb-fts.so|0018570fcbbf69eafc2be93342a277fc9fa4b62d
-vendor/lib/libacdbloader.so|5ff34a6d43e4bc7529dc12822cece01e956b8537
-vendor/lib/libacdbrtac.so|668183e16a001e48362016f643929b2d39bcbb9e
+# ACDB loader
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -49,25 +49,25 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
 
-# ADSP - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
-vendor/bin/adsprpcd|12e09d8e87b260a8721c7938890186a0877a9e85
-vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|77f5aaf6d773ee545e39bc5fdc99c65434c05379
-vendor/lib/libadsp_default_listener.so|49d7644708419ea077ffd9d00901ebf6cdd4377c
-vendor/lib/libadsprpc.so|2c45baa7c6a8743f7e433a25fc40aff0e6827c65
-vendor/lib/libmdsprpc.so|aa282b4586db545af420aeaa8db56d295458c8fa
-vendor/lib/libsdsprpc.so|5840457471e6ec0be98be444018134ad449627f1
-vendor/lib64/libadsp_default_listener.so|3ebcf635d6cdc447b8ecd40ea76bda39bf82c308
-vendor/lib64/libadsprpc.so|23f060277d2d62556ececafdd302f5c9ed04e71b
-vendor/lib64/libmdsprpc.so|8809bf6a1205973af25b5fc70a6fbef51b19d4cc
-vendor/lib64/libsdsprpc.so|3955edaff3a2950999f14b0b45c0507bb22a7410
+# ADSP 
+vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
 
-# CDSP - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
-vendor/bin/cdsprpcd|530bcfcf9a31dedcc6c8ff5ea33fbaf8c03ab877
-vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsp_default_listener.so|6a3f97faf26da3d01f7895d37c09c8bc62030e0a
-vendor/lib/libcdsprpc.so|4e96a58922494800b65ac0f269db23fd7aeb3ae3
-vendor/lib64/libcdsp_default_listener.so|81e5f4737bfb7e2f0a906183b2a8357a5053ee5c
-vendor/lib64/libcdsprpc.so|c9eb743013b62cdfa13eaf1f9c29945d2d3de826
+# CDSP
+vendor/bin/cdsprpcd
+vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
