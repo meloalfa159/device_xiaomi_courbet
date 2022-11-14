@@ -99,6 +99,9 @@ on boot
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
 
+    #palm_sensor
+    chown system system /sys/class/touch/touch_dev/palm_sensor
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100
