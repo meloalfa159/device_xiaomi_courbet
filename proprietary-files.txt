@@ -544,6 +544,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede025
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|e70fda0288c646d0daf0ed0eef2f21855dd8d024
 
 # Display
+vendor/lib64/libsdmcore.so
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libqseed3.so
@@ -554,8 +555,16 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Graphics (DRM) - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
-vendor/lib64/libsdedrm.so|351f4f9a64566097bd19601f18951ac8131a92b5
+# Display Feature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
+# Graphics (DRM)
+vendor/lib64/libsdedrm.so
 
 # Display calibration
 vendor/etc/hdr_config.cfg
@@ -1108,6 +1117,14 @@ vendor/lib64/libscveObjectSegmentation.so|1598ad3797897eb3331a545c74d937c0ae0aed
 vendor/lib64/libscveObjectSegmentation_stub.so|383c62c85c0752c0a6614d0ef99c3f8ec730b4b9
 vendor/lib64/libscveObjectTracker.so|0cf7d3128ae0019d882da5c9d8d9186d549177d1
 vendor/lib64/libscveObjectTracker_stub.so|6f45aa215de07dfeacf811c06af750206bb1cf58
+
+# Touch Feature
+vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc
+vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
+vendor/lib/vendor.xiaomi.hardware.touchfeature@1.0.so
+vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
 
 # Thermal
 vendor/bin/mi_thermald
