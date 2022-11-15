@@ -169,11 +169,6 @@ ro.surface_flinger.set_idle_timer_ms=500
 ro.surface_flinger.set_touch_timer_ms=750
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
-# System property for AD
-ro.vendor.display.ad=1
-ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
-ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
-
 # Fluence
 ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
