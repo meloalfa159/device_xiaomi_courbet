@@ -142,6 +142,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service
 
 PRODUCT_PACKAGES += \
+    libgui_vendor
+
+PRODUCT_PACKAGES += \
     gralloc.sm6150 \
     hwcomposer.sm6150 \
     memtrack.sm6150

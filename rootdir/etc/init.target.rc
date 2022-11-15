@@ -106,6 +106,12 @@ on boot
     chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel
     chmod 0664 /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel
 
+    service vendor.displayfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+    override
+    class hal
+    user system
+    group system graphics
+
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
     # Set swappiness to 100
