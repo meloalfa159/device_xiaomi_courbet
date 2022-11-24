@@ -543,7 +543,6 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|645da35014e8
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|e70fda0288c646d0daf0ed0eef2f21855dd8d024
 
-<<<<<<< HEAD
 # Display
 vendor/lib64/libsdmcore.so
 vendor/lib64/libdisplayqos.so
@@ -973,15 +972,10 @@ vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 
 # Radio (system) - from LA.QSSI.13.0.r1-07400-qssi.0
--system_ext/app/DeviceInfo/DeviceInfo.apk|0918bcb826d7962de8c7664b954863522d87eb62
--system_ext/app/QtiTelephony/QtiTelephony.apk|81467eb539c4ef83c0f05cac6ef1d00bb778aee1
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|9ef9e77f209b7d699d0b37463acfb19faf46d6d4
--system_ext/app/embms/embms.apk|8df601711f4ed7eb786bb3e827cf2cc9113ea911
-system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
-system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
--system_ext/framework/embmslibrary.jar|6fd7f060af0bb76dba317b58cef9b51e0a37a6cc
 -system_ext/framework/qcrilhook.jar|8d44048c04f4d38a6bf6a279e3bceface10c0dde
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
 -system_ext/framework/qti-telephony-common.jar|57b5cb0b7b504d459ff31918cfaf9f05f1e9fe25
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|231862ec524e39c96b8b4575f27060caa36ce36b
 
