@@ -69,6 +69,13 @@ on early-boot
     chown system graphics /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
     chmod 0660 /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
 
+    # Allow system_graphics group to access pmic secure_mode node
+    chown system graphics /sys/class/lcd_bias/secure_mode
+    chmod 0660 /sys/class/lcd_bias/secure_mode
+
+    chown system graphics /sys/class/leds/wled/secure_mode
+    chmod 0660 /sys/class/leds/wled/secure_mode
+
     # SSR setup
     write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys1/restart_level "related"
