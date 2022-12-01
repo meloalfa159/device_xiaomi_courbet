@@ -26,9 +26,9 @@ vendor/lib/libhfp.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 
-# Audio FX modules (system) - from LA.QSSI.13.0.r1-07400-qssi.0
-system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
--system_ext/framework/audiosphere.jar|3c42dff6da0571acd9ea466983c7f6354d588bb3
+# Audio FX modules
+system_ext/etc/permissions/audiosphere.xml
+-system_ext/framework/audiosphere.jar
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
