@@ -18,6 +18,12 @@
 # Display Feature
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service                            u:object_r:hal_displayfeature_xiaomi_default_exec:s0
 
+# Data files
+/data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
+
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                        u:object_r:hal_dms_default_exec:s0
+
 # Fingerprint
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
 /data/vendor/fpc(/.*)?                                               u:object_r:fingerprint_data_file:s0

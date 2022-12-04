@@ -52,6 +52,7 @@ AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 TARGET_PROVIDES_AUDIO_EXTNS := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
@@ -84,11 +85,13 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_courbet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/lineage_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml \
+                                              $(DEVICE_PATH)/configs/hidl/lineage_framework_compatibility_matrix.xml \
+                                              $(DEVICE_PATH)/configs/hidl/audio_dolby.xml
+
 ODM_MANIFEST_SKUS += courbet
 ODM_MANIFEST_COURBET_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
