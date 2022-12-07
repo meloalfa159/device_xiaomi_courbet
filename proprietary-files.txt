@@ -911,6 +911,13 @@ vendor/lib/libgcs.so|4770f7e7eb730aa6051f1678a4421e8aeb2807c5
 vendor/lib/liblistensoundmodel2.so|d96f8a4466c34a737fdd24a33c082ff8150f42ff
 vendor/lib/libsmwrapper.so|6c54b63ef92319b660854065623f30e8b94d344
 
+# Media - Codec2
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/seccomp_policy/codec2.vendor.base.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext.policy
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/lib/libqcodec2.so
+
 # Media (VPP) - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
 vendor/etc/init/vppservice.rc|24c089e0e413cbb3fa6daaf0af4215870bdf1b8e
