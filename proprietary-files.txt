@@ -36,6 +36,9 @@ vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib64/soundfx/libdirac.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib64/soundfx/libswvqe.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
 
 # Dolby - from 9R OOS 11.2.8.8
 system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
