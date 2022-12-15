@@ -43,9 +43,15 @@
         <library name="shoebox" path="libshoebox.so"/>
         <library name="dirac" path="libdirac.so"/>
         <library name="misoundfx" path="libmisoundfx.so"/>
+	<library name="ozo_processing" path="libozoprocessing.so"/>
+
+        <!-- DOLBY DAP -->
         <library name="dap_sw" path="libswdap.so"/>
         <library name="dap_hw" path="libhwdap.so"/>
         <!-- DOLBY END -->
+        <!--DOLBY VQE-->
+        <library name="vqe" path="libswvqe.so"/>
+        <!--DOLBY END-->
         <!--OZO capture START-->
         <library name="ozo_processing" path="libozoprocessing.so"/>
         <!--OZO capture END-->
@@ -110,6 +116,9 @@
             <libhw library="dap_hw" uuid="a0c30891-8246-4aef-b8ad-d53e26da0253"/>
         </effectProxy>
         <!-- DOLBY END -->
+        <!--DOLBY VQE-->
+        <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
+        <!--DOLBY END-->
         <!--OZO capture START-->
         <effect name="ozo" library="ozo_processing" uuid="7e384a3b-7850-4a64-a097-884250d8a737"/>
         <!--OZO capture END-->
