@@ -1246,6 +1246,18 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|4ba792ee3234dca4cd7ebbd7b3f9003
 # WLAN
 vendor/bin/cnss-daemon
 
+# OzoProcessing - from MIUI Alioth 13.0.7.0 EU
+system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so|a2733c6b45e4833dc819d577b047e10cb4f87f52
+system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so|1b05a9df7c21fc3f7612c921adeee6baaed3e181
+system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so|f7a9df3949ab575448b8140dde70ae2acb397607
+system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so|49c7d0dcf08ebacd84ee65644b7eaea6d566785a
+system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so|3eeff7c0847ff303159c736f5adf0fd67c9c91a9
+system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so|52ebb386661aff58ac403c2d546528538fc095c9
+system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so|de9a8a0d841620deaa8ddc26d82eca683f06af29
+system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so|b13304b91911c7bc2f6c0e4c6e09b0a8b4dc94bf
+system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so|957d749a4b1c1874124d2fbdf4981e927922bc9e
+system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so|3a7a7252641cc39da386d66d83b802509ab9570d
+
 # Xiaomi MAC
 vendor/bin/nv_mac
 
