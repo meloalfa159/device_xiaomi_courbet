@@ -74,6 +74,7 @@
       <value>1939200</value> <!-- 1939 MHz CPU speed -->
       <value>2169600</value> <!-- 2169 MHz CPU speed -->
       <value>2208000</value> <!-- 2208 MHz CPU speed -->
+      <value>2304000</value> <!-- 2304 MHz CPU speed -->
     </array>
     <!-- Additional power used by a CPU core from cluster 0 when running at
          different speeds, excluding cluster and active cost -->
