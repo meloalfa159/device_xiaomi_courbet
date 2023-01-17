@@ -1,0 +1,6 @@
+# Bluetooth
+persist.bluetooth.disableabsvol=true
+
+# Media
+ro.config.media_vol_default=10
+ro.config.media_vol_steps=30
