@@ -1,3 +1,6 @@
 type sysfs_doze, sysfs_type, fs_type;
 
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply)
+
 allow system_app sysfs_doze:file rw_file_perms;
