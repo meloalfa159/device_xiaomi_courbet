@@ -28,9 +28,10 @@
     <dimen name="status_bar_padding_end">4dp</dimen>
     <dimen name="rounded_corner_content_padding">47.0px</dimen>
 
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="config_rounded_mask_size">146px</dimen>    
-    <dimen name="config_rounded_mask_size_top">146px</dimen>
-    <dimen name="config_rounded_mask_size_bottom">146px</dimen>
+    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
+         Note that while rounded.xml includes the entire path (including the horizontal and vertical
+         corner edges), this pulls out just the curve.
+     -->
+    <dimen name="config_rounded_mask_size">156px</dimen>
 
 </resources> 
