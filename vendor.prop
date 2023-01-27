@@ -20,13 +20,4 @@ vendor.display.disable_idle_time_video=1
 vendor.display.idle_time=1100
 
 # Fluence
-ro.qc.sdk.audio.fluencetype=none
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
 ro.vendor.audio.sdk.fluencetype=fluence
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecomm=true
-vendor.audio.feature.fluence.enable=true
