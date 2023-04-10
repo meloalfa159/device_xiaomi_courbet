@@ -28,10 +28,10 @@
     <dimen name="rounded_corner_content_padding">16dp</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="config_rounded_mask_size">146px</dimen>    
+    <dimen name="config_rounded_mask_size">102px</dimen>    
 
     <!-- Radius of the software rounded corners at the bottom of the display
          in its natural orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="config_rounded_mask_size_top">146px</dimen>
-    <dimen name="config_rounded_mask_size_bottom">146px</dimen>
+    <dimen name="config_rounded_mask_size_top">102px</dimen>
+    <dimen name="config_rounded_mask_size_bottom">102px</dimen>
 </resources> 
