@@ -2,6 +2,8 @@
    Copyright (c) 2015, The Linux Foundation. All rights reserved.
    Copyright (C) 2016 The CyanogenMod Project.
    Copyright (C) 2019-2020 The LineageOS Project.
+   Copyright (C) 2021 The Android Open Source Project.
+   Copyright (C) 2022 The XPerience Project
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -28,15 +30,11 @@
  */
 
 #include <cstdlib>
-#include <fstream>
 #include <string.h>
-#include <unistd.h>
-#include <vector>
 
-#include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
-#include <sys/sysinfo.h>
+#include <android-base/properties.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
@@ -44,90 +42,59 @@
 using android::base::GetProperty;
 using std::string;
 
-std::vector<std::string> ro_props_default_source_order = {
-    "",
-    "odm.",
-    "product.",
-    "system.",
-    "system_ext.",
-    "vendor.",
-};
+void property_override(char const prop[], char const value[])
+{
+    auto pi = (prop_info*) __system_property_find(prop);
 
-void property_override(char const prop[], char const value[], bool add = true) {
-    prop_info *pi;
-
-    pi = (prop_info *)__system_property_find(prop);
-    if (pi)
+    if (pi != nullptr)
         __system_property_update(pi, value, strlen(value));
-    else if (add)
+    else
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_dalvik_properties() {
-    struct sysinfo sys;
+void set_ro_build_prop(const string &source, const string &prop,
+                       const string &value, bool product = true) {
+    string prop_name;
 
-    sysinfo(&sys);
-    if (sys.totalram >= 3ull * 1024 * 1024 * 1024) {
-        // from - phone-xhdpi-4096-dalvik-heap.mk
-        property_override("dalvik.vm.heapstartsize", "8m");
-        property_override("dalvik.vm.heapgrowthlimit", "192m");
-        property_override("dalvik.vm.heapsize", "512m");
-        property_override("dalvik.vm.heapmaxfree", "16m");
+    if (product)
+        prop_name = "ro.product." + source + prop;
+    else
+        prop_name = "ro." + source + "build." + prop;
 
-    } else if (sys.totalram < 6144ull * 1024 * 1024) {
-        // from - phone-xhdpi-6144-dalvik-heap.mk
-        property_override("dalvik.vm.heapstartsize", "16m");
-        property_override("dalvik.vm.heapgrowthlimit", "256m");
-        property_override("dalvik.vm.heapsize", "512m");
-        property_override("dalvik.vm.heapmaxfree", "32m");
- 
-    } else {
-        // 8GB & 12GB RAM
-        property_override("dalvik.vm.heapstartsize", "32m");
-        property_override("dalvik.vm.heapgrowthlimit", "512m");
-        property_override("dalvik.vm.heapsize", "768m");
-        property_override("dalvik.vm.heapmaxfree", "64m");
-    }
-    property_override("dalvik.vm.heaptargetutilization", "0.5");
-    property_override("dalvik.vm.heapminfree", "8m");
+    property_override(prop_name.c_str(), value.c_str());
 }
 
-void set_device_props(const std::string brand, const std::string device, const std::string model,
-        const std::string name, const std::string marketname) {
-    const auto set_ro_product_prop = [](const std::string &source,
-                                        const std::string &prop,
-                                        const std::string &value) {
-        auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), true);
-    };
+void set_device_props(const string model, const string name, const string marketname, const string mod_device) {
+    // list of partitions to override props
+    string source_partitions[] = { "", "odm.", "product.",
+                                   "system.", "system_ext.", "vendor." };
 
-    for (const auto &source : ro_props_default_source_order) {
-        set_ro_product_prop(source, "brand", brand);
-        set_ro_product_prop(source, "device", device);
-        set_ro_product_prop(source, "model", model);
-        set_ro_product_prop(source, "name", name);
-        set_ro_product_prop(source, "marketname", marketname);
+    for (const string &source : source_partitions) {
+        set_ro_build_prop(source, "model", model);
+        set_ro_build_prop(source, "name", name);
+        set_ro_build_prop(source, "marketname", marketname);
     }
+    property_override("ro.product.mod_device", mod_device.c_str());
 }
 
-void vendor_load_properties() {
-    string region = android::base::GetProperty("ro.boot.hwc", "");
+void vendor_load_properties()
+{
+    // Detect device and configure properties
+    string region = GetProperty("ro.boot.hwc", "");
 
-    if (region == "INDIA") {
-        set_device_props(
-            "Xiaomi", "courbetin", "M2101K9AI", "courbet_in_global", "Mi 11 Lite 4G");
-        property_override("ro.product.mod_device", "courbet_in_global");
-    } else {
-        set_device_props(
-            "Xiaomi", "courbet", "M2101K9AG", "courbet_global", "Mi 11 Lite 4G");
-        property_override("ro.product.mod_device", "courbet_global");
+    if (region == "IN") { // India
+        set_device_props("M2101K9AI", "courbetin", "Mi 11 Lite", "courbet_in_global");
+        property_override("bluetooth.device.default_name", "Mi 11 Lite");
+        property_override("vendor.usb.product_string", "Mi 11 Lite");
+    } else { // Global
+        set_device_props("M2101K9AG", "courbet", "Mi 11 Lite", "courbet_global");
+        property_override("bluetooth.device.default_name", "Mi 11 Lite");
+        property_override("vendor.usb.product_string", "Mi 11 Lite");
     }
 
-    load_dalvik_properties();
-
-//  SafetyNet workaround
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
+    // SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.oem_unlock_supported", "0");
-//  Enable transitional log for Privileged permissions
-    property_override("ro.control_privapp_permissions", "log");
 }
