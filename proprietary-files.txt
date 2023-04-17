@@ -133,7 +133,6 @@ vendor/lib/camera/fdconfigvideolite.bin
 -vendor/lib/libsnsapi.so
 -vendor/lib/libsnsdiaglog.so
 -vendor/lib/libswregistrationalgo.so
--vendor/lib/libswvdec.so
 -vendor/lib/libvideoutils.so
 -vendor/lib64/camera/com.qti.sensor.courbet_imx355.so
 -vendor/lib64/camera/com.qti.sensor.courbet_imx471_front.so
@@ -284,8 +283,6 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libsns_device_mode_stub.so
 -vendor/lib64/libsns_fastRPC_util.so
 -vendor/lib64/libsns_low_lat_stream_stub.so
--vendor/lib64/libsnsapi.so
--vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libswregistrationalgo.so
 -vendor/lib64/libswvdec.so
 -vendor/lib64/libsymphony-cpu.so
@@ -367,15 +364,6 @@ vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
-
-# IPA firmware
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
 
 # IR
 -vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
