@@ -479,7 +479,7 @@ vendor/lib64/libcacertclient.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
-# CNE (system) - from LA.QSSI.13.0.r1-09400.01-qssi.0
+# CNE (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|4f483c8474fde0265baa9eec278b99a9a57c6d7d
 system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar|d4f29d4a7db3e837261c16099ada0d64a8cf1986
 system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar|1166b87531cb34b6f1810a64c5303e6d0621542f
@@ -572,6 +572,7 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|81be3e1c3928
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|12d4edcd852196a531f688ed74d86ea10c4acb43
 
+<<<<<<< HEAD
 # Display
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libqseed3.so
@@ -615,7 +616,7 @@ vendor/lib64/libtinyxml.so
 vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
-# DPM (system) - from LA.QSSI.13.0.r1-09400.01-qssi.0
+# DPM (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 -framework/tcmclient.jar|0402c82a800b58a2e93fd7cb8e81a24e674ebc35
 system_ext/bin/dpmd|d098df72c60697de359a80d6377689d98fb11221
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -682,7 +683,7 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so|0af387d416acf6d697b9edd4090e3a694169
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# FM (system) - from LA.QSSI.13.0.r1-09400.01-qssi.0
+# FM (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 system_ext/lib64/fm_helium.so|623a78dfe8f73808158bc88116cd3204588aa126
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
@@ -697,8 +698,6 @@ vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
 vendor/firmware/a618_gmu.bin
 vendor/firmware/a630_sqe.fw
-
-
 
 # Graphics (Adreno) - from LA.UM.9.14.r1-21000-LAHAINA.QSSI13.0
 vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
@@ -790,8 +789,8 @@ vendor/lib64/vendor.qti.gnss@4.0.so|e38ae43982dc62bf48193a6c3eb2ae385adb37aa
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|1633c31212d1ea9338b79ebfc2476f83424f36ee
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c04fbdd3123
 
-# Radio - IMS (system) - from LA.QSSI.13.0.r1-09400.01-qssi.0
-system_ext/app/ImsRcsService/ImsRcsService.apk|17ea49a0462c5e88ed1d0913a3156e87b5568207
+# Radio - IMS (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+-system_ext/app/ImsRcsService/ImsRcsService.apk|1808781bcabdec3db97fd19cfe0365a1040178c1
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|b40fc74f7d5e58b4e918f952b89a79cf2a5c4088
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bfceff47fb0b55a418bed71de6050d876a776ac7
@@ -839,7 +838,7 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so|662bccc5d4b40a79a47928c8957bfdf
 system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so|bdb530a365806b33effe0fea03f181decb20c2ae
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|ace5e02b6cd79b43a07d84e2d18d6818821a3c48
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
--system_ext/priv-app/ims/ims.apk|711e542958c1d05d18ec84984c495a3d607ec9bb
+-system_ext/priv-app/ims/ims.apk|5690534155879d101cbe323456b01f29cb97b8b4
 
 # Radio - IMS (vendor)
 vendor/bin/ims_rtp_daemon
@@ -1261,33 +1260,33 @@ system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessi
 # Xiaomi MAC
 vendor/bin/nv_mac
 
-# WiFi Display (system) - from LA.QSSI.13.0.r1-09400.01-qssi.0
+# WiFi Display (system) - from LA.QSSI.13.0.r1-09700-qssi.0
 framework/WfdCommon.jar|323859204993cb8bf89821baeb08a6a85e750c65
-system_ext/bin/wfdservice|9c5782aed8c01b1d1cf0a54071570880ca74cfc8
+system_ext/bin/wfdservice|cd0638589d1f652d5d40673105dd3ee63856cb88
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
 system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
-system_ext/lib/libmmosal.so|14358c83285703d1bcad7c84827bcafc03fd205c
-system_ext/lib/libmmparser_lite.so|a49384193435b56bda141f082de9f071df32a3e8
-system_ext/lib/libmmrtpdecoder.so|1e299a0bb722d0b42ed0a53c76a43c4d0fcc1416
-system_ext/lib/libmmrtpencoder.so|6f7e764beeaa523e41cfdc39a5acee286695c1e0
-system_ext/lib/libwfdavenhancements.so|8f581987a74a5a6891d8e9c2d06d8444e64e9da3
-system_ext/lib/libwfdclient.so|47eff565449cb71993745d440152ebe2037b7225
-system_ext/lib/libwfdcommonutils.so|cf668b0ec88b1320c85a8b12794456829ddecbe0
-system_ext/lib/libwfdconfigutils.so|7b6c13f54097f791182addd3d7edb4ece07cc022
-system_ext/lib/libwfddisplayconfig.so|c294084213e5846b8a1dfd20a116e6ba7e430eef
-system_ext/lib/libwfdmminterface.so|deb218bf6ea5169a304e229b786056256ebbdcfd
-system_ext/lib/libwfdmmsink.so|b5bc16211e019f5feb738861c0056f5c0a005cad
-system_ext/lib/libwfdmmsrc_system.so|c9e64055d9d779673d6ede8520490f0d373bdd78
-system_ext/lib/libwfdrtsp.so|fc3944d148ab19bfa9669256bba2cabbba06acf4
-system_ext/lib/libwfdservice.so|e443f27dbd61dd871d0db851f09120a6219038bc
-system_ext/lib/libwfdsinksm.so|94cfea8ef6c65f07e644cf6cf69749dc0b44612c
-system_ext/lib/libwfduibcinterface.so|c3284ec3f1f710f53d1361f35c1986d40e97274d
-system_ext/lib/libwfduibcsink.so|e6b9aac38a924e5ad43755a1df77ae42629a4977
-system_ext/lib/libwfduibcsinkinterface.so|8b911437ca01c703e9218ac801fe1a62019371da
-system_ext/lib/libwfduibcsrc.so|0e86813fd0f7040f4cc9af19bde615dd4a17d7cd
-system_ext/lib/libwfduibcsrcinterface.so|2f3964167fc80e5e150d631362377d4a29a26c8d
-system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|e448fa49d3e46dda1cc533c00b93c37d9c8e5229
+system_ext/lib/libmmosal.so|7bfb7043ae51bc240ab52bc675af1a46237d3bf6
+system_ext/lib/libmmparser_lite.so|f63d4f3e66ee2e87a94646f6e49c80f9308c7c37
+system_ext/lib/libmmrtpdecoder.so|dd7868f19bf168243d514239bf103048d7095be3
+system_ext/lib/libmmrtpencoder.so|0db959316bf80e8337eeb7f747c138fba251ec9c
+system_ext/lib/libwfdavenhancements.so|f405caf28525f32484eede8c61efb604f234e536
+system_ext/lib/libwfdclient.so|880ab8842bbb00317b1cd83fa7148c55c65cd18a
+system_ext/lib/libwfdcommonutils.so|4b48d7941df68f7316c464d94d2f31d4e8f026e5
+system_ext/lib/libwfdconfigutils.so|01ec2d890115163de2d33902aa72b61428a98124
+system_ext/lib/libwfddisplayconfig.so|ec3383d6c03a21985f4442eae6c7e935867d10c8
+system_ext/lib/libwfdmminterface.so|1bb29e1b8679c45fe571b31a0f3987e3c2156de0
+system_ext/lib/libwfdmmsink.so|fb043f43e4f637f8c6f39411c88302f602907b3f
+system_ext/lib/libwfdmmsrc_system.so|5f31daefdb4851a41bf6090754d2759da30d7a4c
+system_ext/lib/libwfdrtsp.so|ad581d4602938955835d0d687deaff8a62ce498e
+system_ext/lib/libwfdservice.so|dc0b0a25b3cea2b2bf45afd7ce46d3efd1403d03
+system_ext/lib/libwfdsinksm.so|dd12c33ff388d2fa43120475f6b434bb446b3158
+system_ext/lib/libwfduibcinterface.so|7ac5b7fd7ff0b469629548549cf3a907068be174
+system_ext/lib/libwfduibcsink.so|5630028a8152379a1037d81224b8c031209b93ce
+system_ext/lib/libwfduibcsinkinterface.so|590c026fd1487f4c26f172846f156a12ecc52922
+system_ext/lib/libwfduibcsrc.so|09821648adb3275b2c2619af7581f35a47643ff5
+system_ext/lib/libwfduibcsrcinterface.so|5109d34b3d30d107831c425e7bbde1eb1b8cfa02
+system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|445aaf67bf2b0c7ffddca10f3d334715384db8a5
 system_ext/lib64/libmmosal.so|d46f10b470ecd829c6f2a424566f1cbbc6ebe234
 system_ext/lib64/libmmparser_lite.so|be18953c8c05af2af44bf7feccf2de4fdedaa3a3
 system_ext/lib64/libmmrtpdecoder.so|9f647eb3812478fbd7e23c0580968117c85d6a73
