@@ -343,6 +343,9 @@ vendor/etc/camera/watermark_font_2300_3199.dat
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# DRM
+-vendor/lib64/liboemcrypto.so
+
 # IPA
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
