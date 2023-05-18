@@ -26,7 +26,7 @@ ODM_MANIFEST_COURBET_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := courbet_defconfig
+TARGET_KERNEL_CONFIG += vendor/courbet.config
 TARGET_KERNEL_CLANG_VERSION := proton
 
 # Partitions
