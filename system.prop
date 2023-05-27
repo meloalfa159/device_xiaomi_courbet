@@ -48,14 +48,6 @@ telephony.lteOnCdmaDevice=1
 # Recovery
 ro.recovery.ui.margin_height=48
 
-# RIL Powersaving
-persist.radio.add_power_save=1
-pm.sleep_mode=1
-ro.ril.disable.power.collapse=0
-ro.ril.fast.dormancy.rule=1
-ro.ril.fast.dormancy.timeout=3
-ro.mot.eri.losalert.delay=100
-
 # WiFi
 wifi.interface=wlan0
 
