@@ -7,8 +7,6 @@ persist.vendor.audio.voicecall.speaker.stereo=true
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
 
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Display
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=500
