@@ -27,7 +27,6 @@ ODM_MANIFEST_COURBET_FILES := \
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/courbet.config
-TARGET_KERNEL_CLANG_VERSION := proton
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
