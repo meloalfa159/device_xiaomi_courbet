@@ -17,6 +17,7 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Location of physical power button -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1100px</dimen>
     <dimen name="physical_power_button_center_screen_location_y">@dimen/physical_fingerprint_sensor_center_screen_location_y</dimen>
@@ -25,13 +26,11 @@
     <dimen name="status_bar_padding_top">8dp</dimen>
     <dimen name="status_bar_padding_start">4dp</dimen>
     <dimen name="status_bar_padding_end">4dp</dimen>
-    <dimen name="rounded_corner_content_padding">16dp</dimen>
+    <dimen name="rounded_corner_content_padding">47px</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="config_rounded_mask_size">102px</dimen>    
+    <dimen name="config_rounded_mask_size">146px</dimen>    
+    <dimen name="config_rounded_mask_size_top">146px</dimen>
+    <dimen name="config_rounded_mask_size_bottom">146px</dimen>
 
-    <!-- Radius of the software rounded corners at the bottom of the display
-         in its natural orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="config_rounded_mask_size_top">102px</dimen>
-    <dimen name="config_rounded_mask_size_bottom">102px</dimen>
 </resources> 
