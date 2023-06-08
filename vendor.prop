@@ -180,11 +180,6 @@ vendor.display.disable_metadata_dynamic_fps=1
 vendor.gralloc.disable_ubwc=0
 vendor.display.qdcm.mode_combine=1
 
-# Display - Set color mode to Adaptive by default
-persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=2
-persist.sys.sf.color_mode=9
-
 # Surfaceflinger
 debug.sf.frame_rate_multiple_threshold=90
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
