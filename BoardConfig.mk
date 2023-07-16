@@ -30,7 +30,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_courbet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/courbet.config
+TARGET_KERNEL_CONFIG := courbet_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
