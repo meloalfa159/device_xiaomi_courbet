@@ -20,9 +20,6 @@
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
 
-    <!-- Smartcharging -->
-    <bool name="config_supportSmartCharging">true</bool>
-
     <!-- Battery health -->
     <bool name="config_supportBatteryHealth">true</bool>
     <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
