@@ -18,20 +18,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Location of physical power button -->
-    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1100px</dimen>
-    <dimen name="physical_power_button_center_screen_location_y">@dimen/physical_fingerprint_sensor_center_screen_location_y</dimen>
-
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">11dp</dimen>
     <dimen name="status_bar_padding_start">2dp</dimen>
     <dimen name="status_bar_padding_end">4dp</dimen>
-    <dimen name="rounded_corner_content_padding">47.0px</dimen>
 
-    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
-         Note that while rounded.xml includes the entire path (including the horizontal and vertical
-         corner edges), this pulls out just the curve.
-     -->
-    <dimen name="config_rounded_mask_size">156px</dimen>
-
+    <!--  Total minimum padding to enforce to ensure that the dot can always show  -->
+    <dimen name="ongoing_appops_dot_min_padding">16dp</dimen>
 </resources> 
