@@ -28,7 +28,6 @@
         <value>2</value>
     </array>
     <array name="cpu.core_speeds.cluster0">
-      <value>300000</value> <!-- 300 MHz CPU speed -->
       <value>576000</value> <!-- 576 MHz CPU speed -->
       <value>768000</value> <!-- 768 MHz CPU speed -->
       <value>1017600</value> <!-- 1017 MHz CPU speed -->
@@ -40,7 +39,6 @@
       <value>1804800</value> <!-- 1804 MHz CPU speed -->  
     </array>
     <array name="cpu.core_power.cluster0">
-      <value>120.09</value> <!-- 300 MHz CPU speed -->
       <value>128.85</value> <!-- 576 MHz CPU speed -->
       <value>139.87</value> <!-- 768 MHz CPU speed -->
       <value>159.83</value> <!-- 1017 MHz CPU speed -->
@@ -52,7 +50,6 @@
       <value>285.67</value> <!-- 1804 MHz CPU speed -->
     </array>
     <array name="cpu.core_speeds.cluster1">
-      <value>300000</value> <!-- 300 MHz CPU speed -->
       <value>652800</value> <!-- 652 MHz CPU speed -->
       <value>806400</value> <!-- 806 MHz CPU speed -->
       <value>979200</value> <!-- 979 MHz CPU speed -->
@@ -68,7 +65,6 @@
       <value>2304000</value> <!-- 2304 MHz CPU speed -->
     </array>
     <array name="cpu.core_power.cluster1">
-      <value>199.52</value> <!-- 300 MHz CPU speed -->
       <value>282.09</value> <!-- 652 MHz CPU speed -->
       <value>317.76</value> <!-- 806 MHz CPU speed -->
       <value>379.8</value> <!-- 979 MHz CPU speed -->
