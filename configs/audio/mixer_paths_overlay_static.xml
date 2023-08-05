@@ -422,7 +422,7 @@
     </path>
 
     <path name="low-latency-playback">
-        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
+        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="compress-offload-playback2">
@@ -544,6 +544,10 @@
 
     <path name="ultrasound-proximity-output speaker">
         <ctl name="Ultrasound Mode" value="893" />
+        <ctl name="PRI_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+
+    <path name="ultrasound-proximity-output headphones">
         <ctl name="PRI_MI2S_RX_DL_HL Switch" value="1" />
     </path>
 
