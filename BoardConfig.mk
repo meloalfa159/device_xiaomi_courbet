@@ -76,7 +76,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml \
                                               $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
