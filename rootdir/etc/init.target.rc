@@ -74,12 +74,6 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all --late /vendor/etc/fstab.qcom
 
-on post-fs-data
-    mkdir /data/vendor/nnhal 0700 system system
-    mkdir /data/vendor/nfc 0770 nfc nfc
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
-
 on boot
     start rmt_storage
     start rfs_access
@@ -114,6 +108,16 @@ on boot
     class late_start
     user system
     group system input wakelock
+
+on post-fs
+    # Bind mount brightness node
+    mount none /sys/class/backlight/panel0-backlight/brightness /sys/class/backlight/panel0-backlight/brightness_clone bind
+
+on post-fs-data
+    mkdir /data/vendor/nnhal 0700 system system
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
 
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0

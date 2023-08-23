@@ -10,6 +10,10 @@ vendor.bluetooth.soc=cherokee
 # Charger
 ro.charger.enable_suspend=true
 
+# HWC
+ro.sf.force_hwc_brightness=1
+ro.sf.use_latest_hwc_vsync_period=0
+
 # Camera
 log.tag.CHIUSECASE=ERROR
 
