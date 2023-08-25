@@ -17,6 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_NAME := lineage_courbet
 PRODUCT_DEVICE := courbet
