@@ -2,11 +2,6 @@
 vendor.camera.                     u:object_r:vendor_camera_prop:s0
 persist.camera.                    u:object_r:vendor_camera_prop:s0
 
-# DisplayFeatureHal
-persist.vendor.max.brightness            u:object_r:vendor_displayfeature_prop:s0
-persist.vendor.df.extcolor.proc          u:object_r:vendor_displayfeature_prop:s0
-persist.vendor.df.color.temp             u:object_r:vendor_displayfeature_prop:s0
-
 # Fingerprint
 persist.vendor.sys.fp.             u:object_r:vendor_fp_prop:s0
 ro.boot.fpsensor                   u:object_r:vendor_fp_prop:s0
@@ -27,7 +22,3 @@ persist.vendor.radio.meid          u:object_r:vendor_deviceid_prop:s0
 
 # Xiaomi thermal daemon
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
-
-# Elliptic ultrasound proximity
-elliptic.ultrasound.               u:object_r:vendor_sensors_prop:s0
-invn.hal                           u:object_r:vendor_sensors_prop:s0

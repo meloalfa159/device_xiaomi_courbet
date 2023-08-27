@@ -1,4 +1,5 @@
-// Copyright (C) 2019 The LineageOS Project
+//
+// Copyright (C) 2019-2020 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,19 +14,22 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.lights-service.courbet",
-    init_rc: ["android.hardware.lights-service.courbet.rc"],
-    vintf_fragments: ["android.hardware.lights-service.courbet.xml"],
+    name: "android.hardware.light@2.0-service.xiaomi_sm6150",
+    defaults: ["hidl_defaults"],
+    vintf_fragments: ["android.hardware.light@2.0-service.xiaomi_sm6150.xml"],
+    init_rc: ["android.hardware.light@2.0-service.xiaomi_sm6150.rc"],
     relative_install_path: "hw",
+    srcs: [
+        "service.cpp",
+        "Light.cpp",
+    ],
     vendor: true,
     shared_libs: [
+        "android.hardware.light@2.0",
         "libbase",
         "libhardware",
-        "libbinder_ndk",
-        "android.hardware.light-V1-ndk",
-    ],
-    srcs: [
-        "Lights.cpp",
-        "service.cpp",
+        "libhidlbase",
+        "liblog",
+        "libutils",
     ],
 }

@@ -829,18 +829,21 @@
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
+        <item>@array/sfps_sensor_props</item>
     </array>
 
-    <array name="config_sfps_sensor_props_0" translatable="false">
-    <item></item> <!--item>displayId</item-->
-        <item></item> <!--item>sensorLocationX</item-->
-        <item>990</item> <!--item>sensorLocationY</item-->
-        <item>115</item> <!--item>sensorRadius</item-->
-    </array>
+    <string-array name="sfps_sensor_props" translatable="false">
+        <item></item>     <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>960</item>  <!-- sensorLocationY -->
+        <item>200</item>  <!-- sensorRadius -->
+    </string-array>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
+
+    <!-- Whether device has fingerprint on power button -->
+    <bool name="config_powerButtonFingerprint">true</bool>
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
@@ -848,12 +851,6 @@
     <!-- Package name of a telephony-related system app, such as an IMS service.
          Exempted from privacy indicators. -->
     <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
-
-    <!-- Smartcharging -->
-    <bool name="config_supportSmartCharging">true</bool>
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
-    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
 
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">true</bool>

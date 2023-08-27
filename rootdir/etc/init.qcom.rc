@@ -69,13 +69,6 @@ on early-boot
     chown system graphics /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
     chmod 0660 /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
 
-    # Allow system_graphics group to access pmic secure_mode node
-    chown system graphics /sys/class/lcd_bias/secure_mode
-    chmod 0660 /sys/class/lcd_bias/secure_mode
-
-    chown system graphics /sys/class/leds/wled/secure_mode
-    chmod 0660 /sys/class/leds/wled/secure_mode
-
     # SSR setup
     write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys1/restart_level "related"
@@ -244,20 +237,20 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     user vendor_qrtr
     group vendor_qrtr
     capabilities NET_BIND_SERVICE
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service vendor.cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
     user system
     group system inet net_admin wifi
     capabilities NET_ADMIN
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 on property:sys.shutdown.requested=*
     write /sys/kernel/shutdown_wlan/shutdown 1
@@ -267,7 +260,7 @@ service vendor.loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 on property:persist.sys.xtra-daemon.enabled=*
     restart vendor.loc_launcher
@@ -299,7 +292,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     class core
     user root
     group root
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
@@ -317,12 +310,3 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     task_profiles ProcessCapacityHigh HighPerformance
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
-
-on property:init.svc.cnss_diag=running
-    stop cnss_diag
-
-on property:init.svc.tcpdump=running
-    stop tcpdump
-
-on property:init.svc.vendor.ipacm-diag=running
-    stop vendor.ipacm-diag

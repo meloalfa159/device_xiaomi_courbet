@@ -45,7 +45,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/dpl_ctrl             0660   usb        usb
 /dev/ipa_odl_ctl          0660   radio      radio
 /dev/ipa_adpl             0660   system     oem_2905
-/dev/iio:device*          0664   system     system
 
 # Permissions for UFS RPMB BSG device node
 /dev/0:0:0:49476          0600   system     system

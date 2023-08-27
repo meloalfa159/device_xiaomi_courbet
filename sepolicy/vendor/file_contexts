@@ -23,9 +23,6 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 
-# Display Feature
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service                            u:object_r:hal_displayfeature_xiaomi_default_exec:s0
-
 # Data files
 /data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
 
@@ -41,16 +38,11 @@
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150    u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.courbet        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr         u:object_r:hal_power_default_exec:s0
 
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
-
-# UFS discard_max_bytes
-/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/discard_max_bytes u:object_r:vendor_sysfs_mmc_host:s0
-
-# UFS read_ahead_kb
-/sys/devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/queue/read_ahead_kb     u:object_r:vendor_sysfs_mmc_host:s0
 
 # WiFi
 /vendor/bin/nv_mac                                                   u:object_r:vendor_wcnss_service_exec:s0
@@ -69,15 +61,8 @@
 # Proximity
 /dev/elliptic0                                                       u:object_r:vendor_elliptic_device:s0
 /sys/bus/iio/devices                                                 u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:vadc@3100/iio:device0(/.*)?  u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm6150l@4:vadc@3100/iio:device1(/.*)? u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/us_prox.0/iio:device2(/.*)?                    u:object_r:vendor_sysfs_iio:s0
-
-# Sensor Service
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service                          u:object_r:vendor_hal_citsensorservice_xiaomi_default_exec:s0
-
-# Touch Feature
-/vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                              u:object_r:hal_touchfeature_xiaomi_default_exec:s0
 
 # Battery secret
 /vendor/bin/batterysecret                                         u:object_r:batterysecret_exec:s0
