@@ -15,12 +15,14 @@
      limitations under the License.
 -->
 <resources>
+
     <!-- The list of package IDs that are allowed to use aux cameras.
          NOTE: If this list is empty then all apps will be able to use aux cameras. -->
     <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <item>org.codeaurora.snapcam</item>
         <item>com.android.camera</item>
-        <item>org.lineageos.aperture</item>
-        <item>org.lineageos.aperture.dev</item>
+	<item>org.derpfest.flash</item>
+        <item>org.derpfest.flash.dev</item>
     </string-array>
 
     <!-- Defines the actions shown in advanced reboot submenu -->
@@ -30,7 +32,4 @@
         <item>restart_fastboot</item>
         <item>restart_bootloader</item>
     </string-array>
-
-    <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">false</bool>
 </resources>
