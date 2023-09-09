@@ -125,6 +125,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml
 
+# Calendar
+PRODUCT_PACKAGES += \
+    CalendarGooglePrebuilt \
+
 # Camera
 PRODUCT_PACKAGES += \
     Aperture \
