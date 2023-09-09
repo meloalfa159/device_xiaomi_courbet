@@ -373,7 +373,7 @@
     <ctl name="HPHR Volume" value="20" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
-    <ctl name="TX_DEC0 Volume" value="95" />
+    <ctl name="TX_DEC0 Volume" value="84" />
     <ctl name="TX_DEC1 Volume" value="84" />
     <ctl name="TX_DEC2 Volume" value="84" />
     <ctl name="TX_DEC3 Volume" value="84" />
@@ -2775,6 +2775,10 @@
         <path name="incall_music_uplink" />
     </path>
 
+    <path name="incall_music_uplink afe-proxy">
+        <path name="incall_music_uplink" />
+    </path>
+
     <path name="incall_music_uplink usb-headphones">
         <path name="incall_music_uplink" />
     </path>
@@ -2863,6 +2867,10 @@
     </path>
 
     <path name="incall_music_uplink2 speaker-and-display-port">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 afe-proxy">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -3212,10 +3220,6 @@
 
     <path name="voice-headset-mic">
         <path name="headset-mic" />
-    </path>
-
-    <path name="voice-headset">
-        <path name="headphones" />
     </path>
 
     <path name="speaker-and-headphones">
