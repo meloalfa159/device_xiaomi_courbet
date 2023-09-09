@@ -14,11 +14,6 @@ ro.charger.enable_suspend=true
 ro.sf.force_hwc_brightness=1
 ro.sf.use_latest_hwc_vsync_period=0
 
-# Camera
-log.tag.CHIUSECASE=ERROR
-persist.vendor.camera.privapp.list=app.grapheneos.camera,org.codeaurora.snapcam,com.android.camera
-vendor.camera.aux.packagelist=app.grapheneos.camera,org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture.dev,com.voltage.flash
-
 # CNE
 persist.vendor.cne.feature=1
 
