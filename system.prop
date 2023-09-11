@@ -42,6 +42,12 @@ ril.subscription.types=RUIM
 # Recovery
 ro.recovery.ui.margin_height=48
 
+# Spark-OS
+ro.spark.device.name=courbet
+ro.spark.group.url=https://t.me/melo159chat
+ro.spark.maintainer=melo159
+ro.spark.maintainer.username=melo159
+
 # WiFi
 wifi.interface=wlan0
 
