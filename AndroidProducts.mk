@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_courbet.mk
+    $(LOCAL_DIR)/evolution_courbet.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_courbet-user \
-    derp_courbet-userdebug \
-    derp_courbet-eng
+    evolution_courbet-user \
+    evolution_courbet-userdebug \
+    evolution_courbet-eng
