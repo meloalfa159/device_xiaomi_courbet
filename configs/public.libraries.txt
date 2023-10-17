@@ -10,3 +10,7 @@ libSuperSensorCPU.so
 libSuperSensor.so
 libVDClearShot.so
 libVDSuperPhotoAPI.so
+libprotobuf-cpp-full-3.9.1.so
+libprotobuf-cpp-lite-3.9.1.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
