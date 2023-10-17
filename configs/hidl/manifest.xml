@@ -3,16 +3,25 @@
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
-        <version>7.1</version>
+        <version>6.0</version>
         <interface>
             <name>IDevicesFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
+     <hal format="hidl">
+    <name>android.hardware.soundtrigger</name>
+    <transport>hwbinder</transport>
+    <version>2.2</version>
+    <interface>
+      <name>ISoundTriggerHw</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
-        <version>7.0</version>
+        <version>6.0</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
@@ -21,7 +30,7 @@
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IBluetoothHci</name>
             <instance>default</instance>
@@ -30,7 +39,7 @@
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+       <version>2.1</version>
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
@@ -473,15 +482,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IXiaomiFingerprint/default</fqname>
-    </hal>
-   <hal format="hidl">
-        <name>vendor.dolby.hardware.dms</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDms</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <!-- WFD HAL Service -->
     <hal format="hidl">
