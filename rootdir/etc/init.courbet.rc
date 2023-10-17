@@ -7,3 +7,27 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     user nfc
     group nfc
     disabled
+
+service vendor.audio-hal-aidl /vendor/bin/audio-hal-aidl
+    class main
+    user audio
+    group audio
+    oneshot
+
+service vendor.audio-effect-hal-aidl /vendor/bin/audio-effect-hal-aidl
+    class main
+    user audio
+    group audio
+    oneshot
+
+service vendor.audio-hal-4-0-msd /vendor/bin/audio-hal-4-0-msd
+    class main
+    user audio
+    group audio
+    oneshot
+
+service audio_proxy_service /system/bin/audio_proxy_service
+    class main
+    user audio
+    group audio
+    oneshot
