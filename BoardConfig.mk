@@ -47,7 +47,6 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 TARGET_PROVIDES_AUDIO_EXTNS := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
@@ -79,7 +78,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml \
                                               $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
                                               $(DEVICE_PATH)/configs/hidl/lineage_framework_compatibility_matrix.xml \
-                                              $(DEVICE_PATH)/configs/hidl/audio_dolby.xml
+                                              
 
 ODM_MANIFEST_SKUS += courbet
 ODM_MANIFEST_COURBET_FILES := \
@@ -93,8 +92,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 TARGET_KERNEL_CONFIG := courbet_defconfig
-TARGET_KERNEL_CLANG_VERSION := adrian
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/adrian-clang
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
@@ -135,19 +135,6 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
-BOARD_ODMIMAGE_PARTITION_RESERVED_SIZE := 104857600
-ifeq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 104857600
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 104857600
-else
-BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1887436800
-BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1887436800
-endif
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 104857600
-BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
@@ -219,5 +206,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+
+
 # Inherit from proprietary files
 include vendor/xiaomi/courbet/BoardConfigVendor.mk
+
