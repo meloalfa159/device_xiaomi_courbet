@@ -96,7 +96,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 TARGET_KERNEL_CONFIG := courbet_defconfig
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CLANG_VERSION := playground
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/playgroundtc
 
@@ -210,8 +209,5 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-
-
 # Inherit from proprietary files
 include vendor/xiaomi/courbet/BoardConfigVendor.mk
-
