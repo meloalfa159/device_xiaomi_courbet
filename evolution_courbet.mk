@@ -14,13 +14,13 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 # Inherit some common Ancient OS stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-# Inherit gms if exist
-$(call inherit-product, vendor/gms/gms_pico.mk)
-
-# Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
+TARGET_USES_PICO_GAPPS := true
 
 PRODUCT_NAME := evolution_courbet
 PRODUCT_DEVICE := courbet
