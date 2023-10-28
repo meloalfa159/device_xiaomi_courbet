@@ -485,7 +485,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
+    android.hardware.wifi-service@1.0 \
     hostapd \
     ipacm \
     IPACM_cfg.xml \
