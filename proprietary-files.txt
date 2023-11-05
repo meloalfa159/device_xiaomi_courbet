@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Mi 11 Lite 4G (codenamed `courbet`) V14.0.3.0.TKQMIXM, unless pinned
+# These proprietary files are extracted from Mi 11 Lite 4G (codenamed `courbet`) V14.0.4.0.TKQMIXM, unless pinned
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
