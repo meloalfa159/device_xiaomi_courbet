@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Media
+PRODUCT_PACKAGES += \
+    Eleven
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
