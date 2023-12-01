@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
 # Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/courbet-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/sweet-miuicamera/products/miuicamera.mk)
 
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-evolution
 
 # Perf
 PRODUCT_PACKAGES += \
