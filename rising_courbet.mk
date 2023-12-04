@@ -11,12 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common RisingOS stuff.
+$(call inherit-product, vendor/rising/config/common_full_phone.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_SYSTEM_NAME := courbet
 
-PRODUCT_NAME := aosp_courbet
+# RisingOS flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_ENABLE_PIXEL_FEATURES := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+RISING_MAINTAINER := melo159
+RISING_CHIPSET := Snapdragon 732G
+RISING_BATTERY := 4250mAh
+RISING_DISPLAY := 2400x1080
+
+PRODUCT_NAME := rising_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
