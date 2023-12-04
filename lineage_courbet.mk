@@ -11,12 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common AlphaDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_courbet
+# Alpha internal properties
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_MATLOG := false
+TARGET_USE_GRAPHENE_CAMERA := false
+TARGET_USE_PIXEL_LAUNCHER := false
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GMS := true
+
+ALPHA_MAINTAINER := melo159
+
+PRODUCT_NAME := lineage_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
