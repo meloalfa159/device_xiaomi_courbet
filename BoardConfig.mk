@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,12 +24,10 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-ODM_MANIFEST_SKUS += courbet
-ODM_MANIFEST_COURBET_FILES := \
+DEVICE_MANIFEST_SKUS += courbet
+DEVICE_MANIFEST_COURBET_FILES := \
+    $(DEVICE_MANIFEST_FILE) \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
-
-# Init
-TARGET_RECOVERY_DEVICE_MODULES := libinit_courbet
 
 # Kernel
 TARGET_KERNEL_CONFIG := courbet_defconfig
@@ -70,7 +68,8 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Screen density
 TARGET_SCREEN_DENSITY := 440
