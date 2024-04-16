@@ -1,0 +1,20 @@
+# Audio
+persist.vendor.audio.hifi=false
+persist.vendor.audio.ring.filter.mask=0
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.us.type=mius
+persist.vendor.audio.voicecall.speaker.stereo=true
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
+
+# Display
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=500
+ro.surface_flinger.set_touch_timer_ms=800
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
+# Fluence
+ro.vendor.audio.sdk.fluencetype=fluence
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
