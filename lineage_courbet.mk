@@ -35,3 +35,5 @@ PRODUCT_MODEL := Mi 11 Lite 4G
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+BUILD_FINGERPRINT := Xiaomi/courbet/courbet:13/TKQ1.221013.002/V14.0.3.0.TKQMIXM:user/release-keys
