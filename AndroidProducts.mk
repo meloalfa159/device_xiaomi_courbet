@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_courbet.mk
+    $(LOCAL_DIR)/lineage_courbet.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_courbet-user \
-    rising_courbet-userdebug \
-    rising_courbet-eng
+    lineage_courbet-user \
+    lineage_courbet-userdebug \
+    lineage_courbet-eng
