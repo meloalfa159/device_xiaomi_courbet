@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 $(call inherit-product, vendor/rising/config/rising.mk)
 
 PRODUCT_SYSTEM_NAME := courbet
+DISABLE_DEXPREOPT_CHECK := true
 
 # RisingOS flags
 WITH_GMS := true
