@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Aperture \
     libpiex_shim
 
 # Display
