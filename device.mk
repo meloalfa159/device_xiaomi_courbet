@@ -25,10 +25,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml
 
-# Calendar
-PRODUCT_PACKAGES += \
-    CalendarGooglePrebuilt \
-
 # Camera
 PRODUCT_PACKAGES += \
     libpiex_shim
@@ -37,10 +33,6 @@ PRODUCT_PACKAGES += \
  PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/display/qdcm_calib_data_xiaomi_42_02_0b_mp_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_42_02_0b_mp_cmd_mode_dsc_dsi_panel.xml \
      $(LOCAL_PATH)/configs/display/qdcm_calib_data_xiaomi_36_02_0a_mp_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_36_02_0a_mp_cmd_mode_dsc_dsi_panel.xml \
-
-# File manager
-PRODUCT_PACKAGES += \
-    FilesPrebuilt
 
 # Init scripts
 PRODUCT_COPY_FILES += \
