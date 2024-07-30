@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 # Inherit some common AlphaDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+-include vendor/lineage-priv/keys/keys.mk
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
