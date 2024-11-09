@@ -25,11 +25,11 @@ PRODUCT_MANUFACTURER := Xiaomi
 WITH_GMS := true
 TARGET_CORE_GMS := true
 TARGET_HAS_UDFPS := false
-RISING_MAINTAINER := melo159
-RISING_CHIPSET := Qualcomm Snapdragon 732G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="courbet_global-user 13 TKQ1.221013.002 V14.0.3.0.TKQMIXM release-keys" \
-    BuildFingerprint=Xiaomi/courbet/courbet:13/TKQ1.221013.002/V14.0.3.0.TKQMIXM:user/release-keys
+    BuildFingerprint=Xiaomi/courbet/courbet:13/TKQ1.221013.002/V14.0.3.0.TKQMIXM:user/release-keys \
+    RisingChipset="Qualcomm Snapdragon 732G" \
+    RisingMaintainer="melo159"
