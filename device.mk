@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
 # Inherit release-keys
 -include vendor/lineage-priv/keys/keys.mk
 
+# Dolby
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.courbet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.courbet.rc
