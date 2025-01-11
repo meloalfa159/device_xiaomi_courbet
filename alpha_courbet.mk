@@ -15,16 +15,30 @@ TARGET_USES_LEICA_HOLY45 := true
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Esclude AudioFX
-TARGET_EXCLUDES_AUDIOFX := true
+# Inherit some common AlphaDroid stuff.
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 # Exclude MatLog
 TARGET_DISABLE_MATLOG := true
 
-PRODUCT_NAME := lineage_courbet
+# AlphaDroid specific settings
+
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 3
+
+TARGET_INCLUDE_MATLOG := false
+ALPHA_MAINTAINER := melo159
+
+# Device properties
+PRODUCT_NAME := alpha_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
