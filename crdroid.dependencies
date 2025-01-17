@@ -24,7 +24,15 @@
     "branch": "15.0"
   },
   {
-    "repository": "crdroidandroid/android_vendor_xiaomi_sweet-miuicamera",
-    "target_path": "vendor/xiaomi/sweet-miuicamera"
+    "repository": "crdroidandroid/android_device_xiaomi_miuicamera",
+    "target_path": "device/xiaomi/miuicamera-sweet",
+    "branch": "15.0-courbet",
+    "remote": "crdroid-gitlab"
+  },
+  {
+    "repository": "crdroidandroid/proprietary_vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera-sweet",
+    "branch": "15.0-courbet",
+    "remote": "crdroid-gitlab"
   }
 ]
