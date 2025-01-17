@@ -224,6 +224,8 @@ vendor/lib64/camera/fdconfigvideolite.bin
 -vendor/lib64/libalCFR.so
 -vendor/lib64/libalLDC.so
 -vendor/lib64/libalhLDC.so
+-vendor/lib64/libarcdualcamsat.so
+-vendor/lib64/libarcsat.so
 -vendor/lib64/libarcsoft_beautyshot.so
 -vendor/lib64/libarcsoft_distortion_correction.so
 -vendor/lib64/libarcsoft_dualcam_refocus.so
