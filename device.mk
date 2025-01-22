@@ -33,6 +33,11 @@ PRODUCT_PACKAGES += \
     libpiex_shim \
     libdng_sdk.vendor
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer \
+    XiaomiParts
+
 # Display
  PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/display/qdcm_calib_data_xiaomi_42_02_0b_mp_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_42_02_0b_mp_cmd_mode_dsc_dsi_panel.xml \
