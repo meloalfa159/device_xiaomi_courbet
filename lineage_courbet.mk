@@ -18,6 +18,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Esclude AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 64,8,5
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name
+AXION_MAINTAINER := melo159
+
+# Processor name
+AXION_PROCESSOR := Qualcomm_Snapdragon_732G_SM6150
+
 PRODUCT_NAME := lineage_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
