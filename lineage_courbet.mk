@@ -25,6 +25,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 # RisingOS overrides
 WITH_GMS := true
 TARGET_CORE_GMS := true
+TARGET_USES_PICO_GAPPS := true
 TARGET_HAS_UDFPS := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
