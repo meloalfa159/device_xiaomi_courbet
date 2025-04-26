@@ -25,6 +25,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # 3 - gapps
 TARGET_BUILD_PACKAGE := 3
 TARGET_INCLUDE_MATLOG := false
+ALPHA_BUILD_TYPE := Unofficial
 ALPHA_MAINTAINER := melo159
 
 # Device properties
