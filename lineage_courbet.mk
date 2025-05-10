@@ -17,6 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_USES_PICO_GAPPS := true
 TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_INCLUDE_ACCORD := false
 
 PRODUCT_NAME := lineage_courbet
 PRODUCT_DEVICE := courbet
