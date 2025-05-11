@@ -50,6 +50,9 @@ PRODUCT_PACKAGES += \
 # Inherit release-keys
 -include vendor/lineage-priv/keys/keys.mk
 
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,libinit_courbet)
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.courbet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.courbet.rc
