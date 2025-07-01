@@ -1,0 +1,10 @@
+<!--Add commentMore actions
+     Copyright (C) 2023 The VoltageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Add maintainer name -->
+    <string name="voltage_maintainer"> melo159 </string>
+
+</resources>
