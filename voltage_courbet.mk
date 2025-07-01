@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1920
 
 PRODUCT_NAME := voltage_courbet
 PRODUCT_DEVICE := courbet
