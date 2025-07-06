@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/courbet/device.mk)
 
 # Inherit some common CherishOS stuff.
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := cherish_courbet
 PRODUCT_DEVICE := courbet
