@@ -12,14 +12,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_courbet
+PRODUCT_NAME := cherish_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Cherish
+CHERISH_MAINTAINER := melo159
+CHERISH_CHIPSET := SM6150
+CHERISH_BATTERY := 4250mAh
+CHERISH_DISPLAY := 1080x2400
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
