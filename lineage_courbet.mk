@@ -18,6 +18,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Esclude AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Exclude MatLog
+TARGET_DISABLE_MATLOG := true
+
 PRODUCT_NAME := lineage_courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
