@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 PRODUCT_PACKAGES += \
-    XiaomiDolby
+    DolbyAtmos
 
 # Inherit release-keys
 -include vendor/lineage-priv/keys/keys.mk
