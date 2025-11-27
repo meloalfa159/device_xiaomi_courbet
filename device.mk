@@ -68,6 +68,7 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_foundation-v33 \
+    Twelve
 
 # NFC
 PRODUCT_PACKAGES += \
