@@ -105,6 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt Google apps
 PRODUCT_PACKAGES += \
+    CalendarGooglePrebuilt \
     FilesPrebuilt
 
 # Sensors
