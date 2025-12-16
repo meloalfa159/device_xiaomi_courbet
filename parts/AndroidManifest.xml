@@ -124,6 +124,21 @@
                        android:resource="@string/haptic_summary" />
         </activity>
 
+        <service android:name=".doze.DozeService"
+                 android:permission="XiaomiDozeService"
+                 android:exported="true">
+        </service>
+
+        <activity
+            android:name=".doze.DozeSettingsActivity"
+            android:exported="false"
+            android:label="@string/ambient_display_title">
+            <intent-filter>
+                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
