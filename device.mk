@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 PRODUCT_PACKAGES += \
-    XiaomiDolby
+    DolbyAtmos
 
 # Init scripts
 PRODUCT_COPY_FILES += \
